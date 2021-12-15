@@ -8,10 +8,10 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
 /**
- * @title GetYourKicksHiTop
+ * @title GetYourKicksHiTops
  * GetYourKicks HiTop - a contract for non-fungible hi-top kicks.
  */
-contract GetYourKicksHiTop is ERC721Enumerable, Ownable {
+contract GetYourKicksHiTops is ERC721Enumerable, Ownable {
     using SafeMath for uint256;
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
@@ -23,7 +23,7 @@ contract GetYourKicksHiTop is ERC721Enumerable, Ownable {
     string public baseTokenURI;
     address public proxyRegistryAddress;
 
-    constructor(string memory baseURI) ERC721("GetYourKicksHiTop", "GYKHT") {
+    constructor(string memory baseURI) ERC721("GetYourKicksHiTops", "GYKHT") {
             setBaseURI(baseURI);
             _tokenIds.increment();
             PRESALE_STATUS = 1;

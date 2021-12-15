@@ -1,13 +1,13 @@
 const { utils } = require("ethers");
 
 async function main() {
-    const baseTokenURI = "ipfs://QmWP83KsvEX8SYDDBCGNfQEjq1PKW9W5ZjqMyhfiKxeEFV/";
+    const baseTokenURI = "ipfs://QmdzPvu7T6C7mtWQUZoHXvoUsPtjNhSwiF82nzv6mFTcTV/";
 
     // Get owner/deployer's wallet address
     const [owner] = await hre.ethers.getSigners();
 
     // Get contract that we want to deploy
-    const contractFactory = await hre.ethers.getContractFactory("UnshelvedElvesSeries1");
+    const contractFactory = await hre.ethers.getContractFactory("GetYourKicksHiTops");
 
     // Deploy contract with the correct constructor arguments
     const contract = await contractFactory.deploy(baseTokenURI);

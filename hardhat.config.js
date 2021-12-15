@@ -27,11 +27,11 @@ module.exports = {
     hardhat: {
     },
     mumbai: {
-      url: "https://rpc-mumbai.maticvigil.com",
+      url: "https://polygon-mumbai.g.alchemy.com/v2/m67bVRYeJh51AcmvQDk5YYS4WZTdoreO",
       accounts: [PRIVATE_KEY]
     },
     matic: {
-      url: "https://polygon-mainnet.g.alchemy.com/v2/exgT3fgnfvEz_mr4HvLxnoqUJWfme_hn",
+      url: "https://polygon-mainnet.g.alchemy.com/v2/r42HYQxhUz3yHODYsXmoOiiFZfWfHUSW",
       accounts: [PROD_PRIVATE_KEY]
     }
   },
